@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>DigitalOcean - The developer cloud</title>
+
+  <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <!-- /bootstrap -->
+
+  <!-- fontawesome stylesheet -->
+  <link href="css/fontawesome-styles.css" rel="stylesheet">
+
+  <!-- "roboto" font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- "open sans condensed" font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+
+  <!-- personal stylesheet -->
+  <link rel="stylesheet" href="css/master.css">
+
+</head>
+<body>
+  <div id="navbar-header-container">
+
+    <!-- navbar -->
+    <section id="navbar">
+      <div class="container-fluid">
+
+        <!-- navbar - row visible at lower resolutions -->
+        <section class="row-lower-res">
+          <div class="row">
+            <div class="col-xs-12">
+              <a class="logo-link" href="" onclick="return false;">
+                <img src="img/digitalocean-logo-white.svg" alt="The logo of DigitalOcean: the symbol of a wave and &quot;DigitalOcean&quot; written with bold characters">
+              </a>
+              <i class="fas fa-bars fa-2x my_fa-bars"></i>
+            </div>
+          </div>
+        </section>
+        <!-- /navbar - row visible at lower resolutions -->
+
+        <!-- navbar - rows visible at higher resolutions -->
+
+          <!-- 1st row -->
+          <section class="first-row-higher-res">
+            <div class="row">
+
+              <!-- col -->
+              <div class="col-xs-6">
+                <span id="navbar-new-button">NEW</span>
+                <a id="navbar-new-link" href="" onclick="return false;">
+                  Now available: Memory-Optimized Droplets
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+              </div>
+              <!-- /col -->
+
+              <!-- col -->
+              <div class="col-xs-6">
+                <nav class="text-right">
+                  <a href="" onclick="return false;">Docs</a>
+                  <a href="" onclick="return false;">Support</a>
+                  <a href="" onclick="return false;">Sales</a>
+                  <a href="" onclick="return false;">Sign in</a>
+                </nav>
+              </div>
+              <!-- /col -->
+
+            </div>
+          </section>
+          <!-- /1st row -->
+
+          <!-- 2nd row -->
+          <section class="second-row-higher-res">
+            <div class="row">
+
+              <!-- logo -->
+              <div class="col-xs-2">
+                <a class="logo-link" href="" onclick="return false;">
+                  <img src="img/digitalocean-logo-blue.svg" alt="The logo of DigitalOcean: the symbol of a wave and &quot;DigitalOcean&quot; written with bold characters">
+                </a>
+              </div>
+              <!-- /logo -->
+
+              <!-- list of links -->
+              <div class="col-xs-8">
+                <nav>
+                  <a href="" onclick="return false;">Products <i class="fas fa-chevron-down fa-sm"></i></a>
+                  <a href="" onclick="return false;">Marketplace</a>
+                  <a href="" onclick="return false;">Customers</a>
+                  <a href="" onclick="return false;">Partners</a>
+                  <a href="" onclick="return false;">Community <i class="fas fa-chevron-down fa-sm"></i></a>
+                  <a href="" onclick="return false;">Pricing</a>
+                </nav>
+              </div>
+              <!-- /list of links -->
+
+              <!-- button -->
+              <div class="col-xs-2">
+                <a class="btn btn-default" href="" onclick="return false;" role="button">Sign Up</a>
+              </div>
+              <!-- /button -->
+
+            </div>
+          </section>
+          <!-- /2nd row -->
+
+        <!-- /navbar - rows visible at higher resolutions -->
+
+      </div>
+    </section>
+    <!-- /navbar -->
+
+    <!-- header -->
+    <header>
+      <div class="container-fluid">
+
+        <!-- header - 1st row -->
+        <div id="header-1st-row">
+          <div class="row">
+            <div class="col-xs-12">
+              <a href="" onclick="return false;">
+                💵<strong> Free credit active:</strong> Get started on DigitalOcean with a $50, 30-day credit for new users.</a>
+            </div>
+          </div>
+        </div>
+        <!-- /header - 1st row -->
+
+        <!-- header - 2nd row -->
+        <div id="header-2nd-row">
+          <div class="row">
+
+            <!-- header - 2nd row - 1st col -->
+            <div class="col-xs-12 col-sm-6">
+              <div id="header-2nd-row-1st-col">
+                <div class="inside-container">
+                  <h1>
+                    Welcome to the developer cloud
+                  </h1>
+                  <p>
+                    DigitalOcean makes it simple to launch in the cloud and scale up as you grow—with an intuitive control panel, predictable pricing, team accounts and more.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- /header - 2nd row - 1st col -->
+
+            <!-- header - 2nd row - 2nd col -->
+            <div class="col-xs-12 col-sm-6">
+              <div id="header-2nd-row-2nd-col">
+                <form>
+                  <h2>Deploy in seconds</h2>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Full name">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email address">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Create a password">
+                  </div>
+                  <button type="button" class="btn btn-default btn-block my_btn-submit">Create your account</button>
+                  <div class="txt-with-horizontal-lines">
+                    <span>or sign up with</span>
+                  </div>
+                  <button type="button" class="btn btn-default .btn-lg my_btn-google">
+                    <img src="img/google-logo.svg" alt="">
+                    Google
+                  </button>
+                  <button type="button" class="btn btn-default .btn-lg my_btn-github">
+                    <img src="img/github-logo.svg" alt="">
+                    GitHub
+                  </button>
+                  <p>
+                    By signing up you agree to the
+                    <a href="" onclick="return false;">Terms of Service</a>.
+                  </p>
+                </form>
+              </div>
+            </div>
+            <!-- /header - 2nd row - 2nd col -->
+
+          </div>
+        </div>
+        <!-- /header - 2nd row -->
+      </div>
+    </header>
+    <!-- /header -->
+
+  </div>
+
+  <!-- main -->
+  <main>
+
+    <!-- business logos section -->
+    <section id="business-logos-section">
+      <div class="container-fluid">
+
+        <!-- row -->
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>INNOVATIVE BUSINESSES TRUST DIGITALOCEAN</h2>
+          </div>
+        </div>
+        <!-- /row -->
+
+        <!-- row -->
+        <div class="row">
+          <div class="col-xs-12">
+            <ul>
+              <li>
+                <img src="img/docker-logo.png" alt="The Docker logo">
+              </li>
+              <li>
+                <img src="img/gitlab-logo.png" alt="The GitLab logo">
+              </li>
+              <li>
+                <img src="img/slack-logo.png" alt="The Slack logo">
+              </li>
+              <li>
+                <img src="img/hashicorp-logo.png" alt="The hashicorp logo">
+              </li>
+              <li>
+                <img src="img/wework-logo.png" alt="The WeWork logo">
+              </li>
+              <li>
+                <img src="img/splunk-logo.png" alt="The Splunk logo">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /row -->
+
+        <!-- row -->
+        <div class="row">
+          <div class="col-xs-12">
+            <p>
+              <a href="" onclick="return false;">
+                View customer stories
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+        <!-- /row -->
+
+      </div>
+    </section>
+    <!-- /business logos section -->
+
+    <!-- deploy section -->
+    <section id="deploy-section">
+      <div class="container-fluid">
+
+        <!-- deploy section - 1st row -->
+        <div id="deploy-section-1st-row">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>
+                Deploy and scale seamlessly
+              </h2>
+              <p>
+                Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /deploy section - 1st row -->
+
+        <!-- deploy section - 2nd row -->
+        <div id="deploy-section-2nd-row">
+          <div class="row">
+
+            <!-- 1st col -->
+            <div class="col-xs-12 col-sm-4">
+              <ul>
+                <li>
+                  <a href="" onclick="return false;">Deploy</a>
+                </li>
+                <li>
+                  <a href="" onclick="return false;">Scale</a>
+                </li>
+                <li>
+                  <a href="" onclick="return false;">Store</a>
+                </li>
+                <li>
+                  <a href="" onclick="return false;">Secure</a>
+                </li>
+                <li>
+                  <a href="" onclick="return false;">Monitor</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /1st col -->
+
+            <!-- 2nd col -->
+            <div class="col-xs-12 col-sm-8">
+              <div id="deploy-section-2nd-row-2nd-col">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <img src="img/kubernets-logo.svg" alt="">
+                    <h3>
+                      Kubernetes in minutes
+                    </h3>
+                    <p>
+                      Spin up a managed Kubernetes cluster in just a few clicks. Simply specify the size and location of your worker nodes.
+                    </p>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6">
+                    <img src="img/droplet-logo.svg" alt="">
+                    <h3>
+                      Flexible compute types
+                    </h3>
+                    <p>
+                      With Standard, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.
+                    </p>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6">
+                    <img src="img/1click-app-marketplace-logo.svg" alt="">
+                    <h3>
+                      1-Click App Marketplace
+                    </h3>
+                    <p>
+                      Quickly deploy projects using one of our preconfigured 1-Click Apps, like LAMP, Docker, and WordPress.
+                    </p>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6">
+                    <img src="img/global-availability-logo.svg" alt="">
+                    <h3>
+                      Global availability
+                    </h3>
+                    <p>
+                      Deploy to any of our data center locations – New York, SF, London, Amsterdam, Bangalore, and more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /2nd col -->
+
+          </div>
+        </div>
+        <!-- /deploy section - 2nd row -->
+
+      </div>
+    </section>
+    <!-- /deploy section -->
+
+    <!-- designed section -->
+    <section id="designed-section">
+      <div class="container-fluid">
+
+        <!-- designed section - 1st row -->
+        <div id="designed-section-1st-row">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>
+                Designed for developers
+              </h2>
+              <p>
+                Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /designed section - 1st row -->
+
+        <!-- designed section - 2nd row -->
+        <div id="designed-section-2nd-row">
+          <div class="row">
+            <div class="col-xs-12">
+              <a href="" onclick="return false;">
+                <i class="fas fa-chevron-left fa-2x"></i>
+              </a>
+              <img class="carousel-img" src="img/screenshot-create-droplet.jpg" alt="A screenshot of the &quot;Create Droplets&quot; page of this site">
+              <a href="" onclick="return false;">
+                <i class="fas fa-chevron-right fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /designed section - 2nd row -->
+
+        <!-- designed section - 3rd row -->
+        <div id="designed-section-3rd-row">
+          <div class="row">
+            <div class="col-xs-12">
+              <p>
+                Choose the machine type that’s right for your app – and  spin up in 55 seconds or less.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /designed section - 3rd row -->
+
+      </div>
+    </section>
+    <!-- /designed section -->
+
+    <!-- built for business section -->
+    <section id="built-for-business-section">
+      <div class="container-fluid">
+
+        <!-- built for business section - 1st row -->
+        <div id="built-for-business-section-1st-row">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>
+                Built for business
+              </h2>
+            </div>
+          </div>
+        </div>
+        <!-- /built for business section - 1st row -->
+
+        <!-- built for business section - 2nd row -->
+        <div id="built-for-business-section-2nd-row">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <img src="img/shield-with-check-mark.svg" alt="">
+              <h3>Reliable platform</h3>
+              <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
+              <a href="" onclick="return false;">
+                Security <i class="fas fa-chevron-right fa-xs"></i>
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <img src="img/predictable-pricing.svg" alt="">
+              <h3>Predictable pricing</h3>
+              <p>Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.</p>
+              <a href="" onclick="return false;">
+                Pricing <i class="fas fa-chevron-right fa-xs"></i>
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <img src="img/operator-with-heart.svg" alt="">
+              <h3>World-class service</h3>
+              <p>Free around-the-clock technical support for all customers, with additional benefits for premium support subscribers. You’ll feel the love.</p>
+              <a href="" onclick="return false;">
+                Support <i class="fas fa-chevron-right fa-xs"></i>
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <img src="img/certificate-with-key.svg" alt="">
+              <h3>Security and compliance</h3>
+              <p>Keep your data protected. Our platform is certified on multiple international standards, including SOC 1 Type II, SOC 2 Type II, ISO/IEC 27001, and PCI-DSS.</p>
+              <a href="" onclick="return false;">
+                Compliance <i class="fas fa-chevron-right fa-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /built for business section - 2nd row -->
+
+      </div>
+    </section>
+    <!-- /built for business section -->
+
+    <!-- service customers section -->
+    <section id="service-customers-section">
+      <div class="container-fluid">
+
+        <!-- service customers - 1st row -->
+        <div id="service-customers-section-1st-row">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>
+                SERVICE YOUR CUSTOMERS AROUND THE WORLD FROM 12 DATA CENTERS.
+              </h2>
+            </div>
+          </div>
+        </div>
+        <!-- /service customers - 1st row -->
+
+        <!-- service customers - 2nd row -->
+        <div id="service-customers-section-2nd-row">
+          <div class="row">
+
+            <!-- 1st col -->
+            <div class="col-xs-12 col-sm-6">
+              <table class="table">
+                <tr>
+                  <td class="col-xs-2">AMS2</td>
+                  <td class="col-xs-6">Amsterdam, Netherlands</td>
+                  <td class="col-xs-4 text-right">
+                    <a href="" onclick="return false;">
+                      Test speed<i class="fas fa-chevron-right fa-xs"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>AMS3</td>
+                  <td>Amsterdam, Netherlands</td>
+                  <td class="text-right">
+                  <a href="" onclick="return false">
+                    Test speed<i class="fas fa-chevron-right fa-xs"></i>
+                  </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>BLR1</td>
+                  <td>Bangalore, India</td>
+                  <td class="text-right">
+                  <a href="" onclick="return false">
+                    Test speed<i class="fas fa-chevron-right fa-xs"></i>
+                  </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>FRA1</td>
+                  <td>Frankfurt, Germany</td>
+                  <td class="text-right">
+                  <a href="" onclick="return false">
+                    Test speed<i class="fas fa-chevron-right fa-xs"></i>
+                  </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>LON1</td>
+                  <td>London, UK</td>
+                  <td class="text-right">
+                  <a href="" onclick="return false">
+                    Test speed<i class="fas fa-chevron-right fa-xs"></i>
+                  </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>NYC1</td>
+                  <td>New York, USA</td>
+                  <td class="text-right">
+                  <a href="" onclick="return false">
+                    Test speed<i class="fas fa-chevron-right fa-xs"></i>
+                  </a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- /1st col -->
+
+            <!-- 2nd col -->
+            <div class="col-xs-12 col-sm-6">
+              <table class="table">
+                <tr>
+                  <td class="col-xs-2">NYC2</td>
+                  <td class="col-xs-6">New York, USA</td>
+                  <td class="col-xs-4 text-right">
+                  <a href="" onclick="return false">
+                    Test speed<i class="fas fa-chevron-right fa-xs"></i>
+                  </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>NYC3</td>
+                  <td>New York, USA</td>
+                  <td class="text-right">
+                  <a href="" onclick="return false">
+                    Test speed<i class="fas fa-chevron-right fa-xs"></i>
+                  </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>SFO1</td>
+                  <td>San Francisco, USA</td>
+                  <td class="text-right">
+                  <a href="" onclick="return false">
+                    Test speed<i class="fas fa-chevron-right fa-xs"></i>
+                  </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>SFO2</td>
+                  <td>San Francisco, USA</td>
+                  <td class="text-right">
+                  <a href="" onclick="return false">
+                    Test speed<i class="fas fa-chevron-right fa-xs"></i>
+                  </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>SGP1</td>
+                  <td>Singapore</td>
+                  <td class="text-right">
+                  <a href="" onclick="return false">
+                    Test speed<i class="fas fa-chevron-right fa-xs"></i>
+                  </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>TOR1</td>
+                  <td>Toronto, Canada</td>
+                  <td class="text-right">
+                  <a href="" onclick="return false">
+                    Test speed<i class="fas fa-chevron-right fa-xs"></i>
+                  </a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- /2nd col -->
+
+          </div>
+        </div>
+        <!-- /service customers - 2nd row -->
+
+      </div>
+    </section>
+    <!-- /service customers section -->
+
+    <!-- development teams section -->
+    <section id="development-teams-section">
+      <div class="container-fluid">
+
+        <!-- development teams section - 1st row -->
+        <div id="development-teams-section-1st-row">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>
+                Development teams love DigitalOcean
+              </h2>
+              <p>
+                Easily organize your infrastructure with Projects. And with <a href="#">Teams</a>, everyone can get their own account, with just the privileges they need to do their jobs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /development teams section - 1st row -->
+
+        <!-- development teams section - 2nd row -->
+        <div id="development-teams-section-2nd-row">
+          <div class="row">
+            <div class="col-xs-12">
+              <a href="" onclick="return false;">
+                <i class="fas fa-chevron-left fa-2x"></i>
+              </a>
+              <div class="slide-container">
+                <img src="img/content-ignite-logo.png" alt="The content-ignite-logo: a black circle with a flame inside and &quot;contentignite by Think Clever Media&quot; written beside">
+                <p>
+                  “Our hosting costs have decreased by over 90% and we’re running at about 25% of our capacity allowing us to quickly scale.”
+                </p>
+                <div class="name">Jamie Druce</div>
+                <div class="position">Senior Web Developer</div>
+                <a href="" onclick="return false;">
+                  Read story
+                  <i class="fas fa-chevron-right fa-sm"></i>
+                </a>
+              </div>
+              <a href="" onclick="return false;">
+                <i class="fas fa-chevron-right fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /development teams section - 2nd row -->
+
+      </div>
+    </section>
+    <!-- /development teams section -->
+
+    <!-- get started section -->
+    <div id="get-started-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>
+              Get started now.
+            </h2>
+            <button type="button" class="btn btn-default">Create your account</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /get started section -->
+
+  </main>
+  <!-- /main -->
+
+  <!-- footer -->
+  <footer>
+    <div class="container-fluid">
+
+      <!-- footer - 1st row -->
+      <div id="footer-1st-row">
+        <div class="row">
+
+          <!-- 1st col -->
+          <div class="col-xs-6 col-md-2 col-md-offset-1">
+            <h4>
+              Company
+            </h4>
+            <ul>
+              <li>
+                <a href="" onclick="return false;">About</a>
+              </li>
+              <li>
+                <a href=""  onclick="return false;">Leadership</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Blog</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Careers</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Partners</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Referral Program</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Press</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Legal & Security</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /1st col -->
+
+          <!-- 2nd col -->
+          <div class="col-xs-6 col-md-2">
+            <h4>
+              Products
+            </h4>
+            <ul>
+              <li>
+                <a href="" onclick="return false;">Products Overview</a>
+              </li>
+              <li>
+                <a href=""  onclick="return false;">Droplets</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Kubernetes</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Managed Databases</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Spaces</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Marketplace</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Load Balancers</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Block Storage</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Tools & Integrations</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">API</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Pricing</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Documentation</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Release Notes</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /2nd col -->
+
+          <!-- 3rd col -->
+          <div class="col-xs-6 col-md-2">
+            <h4>
+              Community
+            </h4>
+            <ul>
+              <li>
+                <a href="" onclick="return false;">Tutorials</a>
+              </li>
+              <li>
+                <a href=""  onclick="return false;">Meetups</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Q&A</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Write for Donations</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Droplets for Demos</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Hatch Startup Program</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Shop Swag</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Research Program</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Currents Research</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Open Source</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /3rd col -->
+
+          <!-- 4th col -->
+          <div class="col-xs-6 col-md-2">
+            <h4>
+              Solutions
+            </h4>
+            <ul>
+              <li>
+                <a href="" onclick="return false;">Web & mobile apps</a>
+              </li>
+              <li>
+                <a href=""  onclick="return false;">Website hosting</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Big data</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Managed services</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /4th col -->
+
+          <!-- 5th col -->
+          <div class="col-xs-12 col-md-2">
+            <h4>
+              Contact
+            </h4>
+            <ul>
+              <li>
+                <a href="" onclick="return false;">Support</a>
+              </li>
+              <li>
+                <a href=""  onclick="return false;">Sales</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">Report Abuse</a>
+              </li>
+              <li>
+                <a href="" onclick="return false;">System Status</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /5th col -->
+
+        </div>
+      </div>
+      <!-- /footer - 1st row -->
+
+      <!-- footer - 2nd row -->
+      <div id="footer-2nd-row">
+        <div class="container-fluid">
+          <div class="row">
+
+            <!-- 1st col -->
+            <div class="col-xs-12 col-sm-6">
+              <a href="#">
+                <img src="img/digital-ocean-wave-logo.svg" alt="The DigitalOcean logo: the symbol of a wave">
+              </a>
+              <p>
+                © 2019 DigitalOcean, LLC. All rights reserved.
+              </p>
+            </div>
+            <!-- /1st col -->
+
+            <!-- 2nd col -->
+            <div class="col-xs-12 col-sm-6">
+              <ul>
+                <a href="#">
+                  <img src="img/twitter-logo.svg" alt="The Twitter logo">
+                </a>
+                <a href="#">
+                  <img src="img/facebook-logo.svg" alt="The Facebook logo">
+                </a>
+                <a href="#">
+                  <img src="img/instagram-logo.svg" alt="The Instagram logo">
+                </a>
+                <a href="#">
+                  <img src="img/youtube-logo.svg" alt="The YouTube logo">
+                </a>
+                <a href="#">
+                  <img src="img/linkedin-logo.svg" alt="The Linkedin logo">
+                </a>
+                <a href="#">
+                  <img src="img/glassdoor-logo.svg" alt="The Glassdoor logo">
+                </a>
+              </ul>
+            </div>
+            <!-- 2nd col -->
+
+          </div>
+        </div>
+      </div>
+      <!-- /footer - 2nd row -->
+
+    </div>
+  </footer>
+  <!-- /footer -->
+
+  <!-- bootstrap -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <!-- /bootstrap -->
+</body>
+</html>
