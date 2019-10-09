@@ -55,25 +55,32 @@
 
   /* navbar */
     #navbar .row-lower-res {
+      /* height: 90px; */
+    }
+
+    .container-row-lower-res {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       height: 90px;
     }
 
-    #navbar .row-lower-res .logo-link {
+    /* #navbar .row-lower-res .logo-link { */
 
       /* to center it in the navbar */
-      display: inline-block;
+      /* display: inline-block;
       margin-top: 32px;
     }
 
     #navbar .row-lower-res .my_fa-bars {
       float: right;
-      color: white;
+      color: white; */
 
       /* to center it in the navbar */
-      line-height: 90px;
+      /* line-height: 90px;
 
       opacity: 0.5;
-    }
+    } */
 
     #navbar .first-row-higher-res {
       height: 40px;
