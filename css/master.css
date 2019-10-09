@@ -54,16 +54,19 @@
   }
 
   /* navbar */
-    /* #navbar .row-lower-res {
-      /height: 90px;
-    } */
 
-    .row-lower-res .container-inside {
-      display: flex;
-      height: 90px;
-      justify-content: space-between;
-      align-items: center;
-    }
+    /* changes using flexbox */
+      /* #navbar .row-lower-res {
+        /height: 90px;
+      } */
+
+      .row-lower-res .container-inside {
+        display: flex;
+        height: 90px;
+        justify-content: space-between;
+        align-items: center;
+      }
+    /* /changes using flexbox */
 
     #navbar .row-lower-res .my_fa-bars {
       color: white;
@@ -277,37 +280,29 @@
       opacity: 0.4;
     }
 
-    #business-logos-section ul {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    #business-logos-section ul li img {
-      max-width: 80%;
-    }
-
-    #business-logos-section ul li {
-      display: flex;
-      align-items: center;
-    }
-
-    /* media query sezione logos images */
-    @media screen and (max-width: 768px) {
-      #business-logos-section ul li {
-        max-width: 50%;
+    /* changes using flexbox */
+      #business-logos-section ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
       }
-    }
 
-    /* #business-logos-section ul li {
-      display: inline-block; */
+      #business-logos-section ul li {
+        width: 50%;
+      }
 
-      /* -4px to delete the space the browser puts between block elements */
-      /* width: calc(50% - 4px);
-    }
+      #business-logos-section ul li img {
+        max-width: 80%;
+      }
 
-    #business-logos-section ul li img {
-      max-width: 80%;
-    } */
+      /* #business-logos-section ul li {
+        display: inline-block; */
+
+        /* -4px to delete the space the browser puts between block elements */
+        /* width: calc(50% - 4px);
+      } */
+    /* /changes using flexbox */
 
     #business-logos-section .container-fluid .row:last-child a {
       color: #0069ff;
@@ -732,8 +727,8 @@
 
         #business-logos-section ul li {
 
-          /* to put logo images into two side by side columns */
-          width: calc((100% / 6) - 4px);
+          /* to put logo images into one line */
+          width: calc(100% / 6);
         }
 
         /* paragraph of the second to last and the last col */
